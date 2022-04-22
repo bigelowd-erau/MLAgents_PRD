@@ -1,0 +1,47 @@
+{
+    "TrackRacer": {
+        "checkpoints": [
+            {
+                "steps": 499936,
+                "file_path": "results\\DriveTest\\TrackRacer\\TrackRacer-499936.onnx",
+                "reward": null,
+                "creation_time": 1650609548.9375784,
+                "auxillary_file_paths": [
+                    "results\\DriveTest\\TrackRacer\\TrackRacer-499936.pt"
+                ]
+            },
+            {
+                "steps": 500640,
+                "file_path": "results\\DriveTest\\TrackRacer\\TrackRacer-500640.onnx",
+                "reward": null,
+                "creation_time": 1650609549.071578,
+                "auxillary_file_paths": [
+                    "results\\DriveTest\\TrackRacer\\TrackRacer-500640.pt"
+                ]
+            },
+            {
+                "steps": 21664,
+                "file_path": "results\\DriveTest\\TrackRacer\\TrackRacer-21664.onnx",
+                "reward": null,
+                "creation_time": 1650610028.5721483,
+                "auxillary_file_paths": [
+                    "results\\DriveTest\\TrackRacer\\TrackRacer-21664.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 21664,
+            "file_path": "results\\DriveTest\\TrackRacer.onnx",
+            "reward": null,
+            "creation_time": 1650610028.5721483,
+            "auxillary_file_paths": [
+                "results\\DriveTest\\TrackRacer\\TrackRacer-21664.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.11.0+cu115"
+    }
+}
