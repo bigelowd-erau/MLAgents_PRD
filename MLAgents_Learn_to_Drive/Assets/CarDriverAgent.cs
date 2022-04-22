@@ -27,13 +27,19 @@ public class CarDriverAgent : Agent
     private void TrackCheckpoints_OnCarWrongCheckpoint(object sender, TrackCheckpoints.CarCheckPointEventArgs e)
     {
         if (e.carTransform == transform)
-            AddReward(-1f);
+        {
+            Debug.Log("WRONG!");
+            AddReward(-3f);
+        }
     }
 
     private void TrackCheckpoints_OnCarCorrectCheckpoint(object sender, TrackCheckpoints.CarCheckPointEventArgs e)
     {
         if (e.carTransform == transform)
-            AddReward(1f);
+        {
+            Debug.Log("Correct!"); 
+            AddReward(3f);
+        }
     }
 
     public override void OnEpisodeBegin()
@@ -85,18 +91,20 @@ public class CarDriverAgent : Agent
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Wall"))
+        if (collision.gameObject.tag == "Wall")
         {
             //hit wall
+            Debug.Log("Hit Wall!");
             AddReward(-0.5f);
-            EndEpisode();
+            //EndEpisode();
         }
     }
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Wall"))
+        if (collision.gameObject.tag == "Wall")
         {
+            Debug.Log("Still in Wall!");
             //hit wall
             AddReward(-0.1f);
         }

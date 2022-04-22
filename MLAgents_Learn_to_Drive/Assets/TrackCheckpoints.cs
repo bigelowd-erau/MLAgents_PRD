@@ -41,7 +41,7 @@ public class TrackCheckpoints : MonoBehaviour
         e.carTransform = carTransform;
         if (checkpointSingleList.IndexOf(checkpointSingle) == nextCheckpointSingleIndex)
         {
-            nextCheckpointSingleIndex = (nextCheckpointSingleIndex + 1) % checkpointSingleList.Count;
+            nextCheckpointSingleIndexList[carTransformList.IndexOf(carTransform)] = (nextCheckpointSingleIndex + 1) % checkpointSingleList.Count;
             OnCarCorrectCheckpoint?.Invoke(this, e);
         }
         else
