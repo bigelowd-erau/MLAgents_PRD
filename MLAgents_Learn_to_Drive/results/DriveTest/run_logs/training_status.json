@@ -9,15 +9,33 @@
                 "auxillary_file_paths": [
                     "results\\DriveTest\\TrackRacer\\TrackRacer-42639.pt"
                 ]
+            },
+            {
+                "steps": 499983,
+                "file_path": "results\\DriveTest\\TrackRacer\\TrackRacer-499983.onnx",
+                "reward": null,
+                "creation_time": 1650819456.5705686,
+                "auxillary_file_paths": [
+                    "results\\DriveTest\\TrackRacer\\TrackRacer-499983.pt"
+                ]
+            },
+            {
+                "steps": 875919,
+                "file_path": "results\\DriveTest\\TrackRacer\\TrackRacer-875919.onnx",
+                "reward": null,
+                "creation_time": 1650820652.3648353,
+                "auxillary_file_paths": [
+                    "results\\DriveTest\\TrackRacer\\TrackRacer-875919.pt"
+                ]
             }
         ],
         "final_checkpoint": {
-            "steps": 42639,
+            "steps": 875919,
             "file_path": "results\\DriveTest\\TrackRacer.onnx",
             "reward": null,
-            "creation_time": 1650611089.56986,
+            "creation_time": 1650820652.3648353,
             "auxillary_file_paths": [
-                "results\\DriveTest\\TrackRacer\\TrackRacer-42639.pt"
+                "results\\DriveTest\\TrackRacer\\TrackRacer-875919.pt"
             ]
         }
     },
